@@ -1,0 +1,76 @@
+<html lang="es">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="pagina de web de PokeAPI">
+     <meta name="keywords" content="Pokemon">
+     <meta name="author" content="Galia">
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+
+  <body>
+      <nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                SuperHero
+              </a>
+            </div>
+          </nav>
+      </nav>
+      <div class="container">
+          <div class="text-center">
+            <img src="assets/img/sh1.jpg" alt="superhero"/>
+            <h1>Encuentra tu SuperHero</h1>
+          </div>
+          
+          <form>
+                <div class="row w-50 m-auto">
+                    <div class="col-12">
+                        <label>Ingresa el numero de ID para encontrar tu SuperHero:</label>
+                    </div> 
+                    <div class="col-12">
+                        <input class="form-control" id="superHeroInput" type="number">
+                    </div> 
+                </div>
+                <button class="btn btn-primary mx-auto d-block my-3">Buscar</button>
+          </form>
+        </div>
+        
+        <section class="container">
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-12 col-sm-6 d-flex"  >
+                    <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <div id="heroImg"></div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body" id="superHeroInfo">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div id="chartContainer"></div>
+                </div>
+  
+            </div>
+        </section>
+  
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+  </body>
+</html>       
